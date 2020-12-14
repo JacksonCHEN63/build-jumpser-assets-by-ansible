@@ -1,0 +1,28 @@
+---
+- name: Set Comment default
+  set_fact:
+    comment: "create by ansible"
+  when: comment is undefined
+
+- name: "register jumpservers list"
+  uri:
+    url: "{{jumpserver_url}}"
+    method: POST
+    body:
+      ip: "{{ansible_host}}"
+      hostname: "{{inventory_hostname }}"
+      port: "22"
+      platform: "Linux"
+      is_active: "true"
+      admin_user: "{{admin_user}}"
+      comment: "{{comment}}"
+      nodes:
+        - "{{node}}"
+    body_format: json
+    headers:
+       Authorization: 'token {{token}}'
+       content-type: application/json
+    follow_redirects: yes
+    validate_certs: no
+    status_code: "201"
+  register: result

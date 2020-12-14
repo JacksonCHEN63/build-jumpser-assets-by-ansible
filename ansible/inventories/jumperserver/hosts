@@ -1,0 +1,6 @@
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+[jackson]
+jacksontest1 ansible_host=192.168.100.134 node="{{節點名稱}}" comment="jacksont 測試"
+jacksontest2 ansible_host=192.168.200.245 node="{{節點名稱}}" 

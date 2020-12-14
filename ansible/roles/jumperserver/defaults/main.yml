@@ -1,0 +1,13 @@
+---
+#ex
+jumpserver_url: https://jumpserver.xxx.com/api/v1/assets/assets/
+token: ska3ne1ia3k5dlfkenjw3w2wed9wqwer #範例
+admin_user: d29kwneir220enjw4kf8        #範例
+
+#節點
+
+節點名稱: 節點token #從https://jumpserver.xxx.com/api/v1/assets/assets/  這邊去拿節點token
+
+#ex
+jacksonnode: dla239sni3si492ndsdr23dj2aidojfne23
+
