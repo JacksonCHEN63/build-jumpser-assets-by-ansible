@@ -5,7 +5,7 @@
 
 2.role 直接使用即可，default這邊要填寫相對應的變數
 
-3.inventory 要選擇資產的節點，commnet可填可不填
+3.inventory 要選擇資產的節點，comment可填可不填
 
 ref)
 
